@@ -1,33 +1,33 @@
-# 8086_test
+# 80286_test
 
-A test program that tests my i8086 CPU Core using the hardware generated tests from SingleStepTests/ProcessorTests/8088. Currently passes all tests but DIV and IDIV. DIV and IDIV dont define any flags so the tests are failing because of the undefined state of the flags after a DIV/IDIV. Results are correct.
+A test program that tests my i80286 CPU Core using the hardware generated tests from SingleStepTests/ProcessorTests/80286.
 
 ## Building
 
-The project is built in Visual Studio 2022
+The project is built in Visual Studio 2022 / 2026
 
- | Dependencies   |                                        |
- | -------------- | -------------------------------------- |
- | I8086         | https://github.com/tommojphillips/i8086 |
- | cJSON         | https://github.com/DaveGamble/cJSON     |
+ | Dependencies   |                                          |
+ | -------------- | ---------------------------------------- |
+ | I80286         | https://github.com/tommojphillips/i80286 |
+ | cJSON          | https://github.com/DaveGamble/cJSON      |
 
 ---
 
  1. Clone the repo and submodules
   
   ```
-  git clone --recurse-submodules https://github.com/tommojphillips/i8086_test.git
+  git clone --recurse-submodules https://github.com/tommojphillips/i80286_test.git
   ```
 
- 2. Open `i8086_test\vc\8086_test.sln`, build.
+ 2. Open `i80286_test\vc\80286_test.sln`, build.
 
- 3. Clone 8088 JSON tests from SingleStepTests/ProccessorTests
+ 3. Clone 80286 JSON tests from SingleStepTests/ProccessorTests
   
   ```
   git clone https://github.com/SingleStepTests/ProcessorTests.git
   ```
 
- 4. Extract all `.json` tests from `ProcessorTests\8088\v1\` to `i8086_tests\tests`
+ 4. Extract all `.json` tests from `ProcessorTests\80286\v1\` to `i80286_tests\tests`
 
  5. Open a terminal in the root directory of the repo.
 
@@ -39,7 +39,7 @@ The project is built in Visual Studio 2022
  ```
 
  ```
- run_tests.bat bin\x64\Debug\i8086_tests.exe tests\ 00.json
+ run_tests.bat bin\x64\Debug\i80286_tests.exe tests\ 00.json
  ```
 
 The .bat will run all tests in that directory.
