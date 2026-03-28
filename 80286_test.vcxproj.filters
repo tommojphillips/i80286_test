@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CJSON">
+      <UniqueIdentifier>{36ab8a09-0e73-4d44-ad7c-f2b2b8c3d1ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="i80286">
+      <UniqueIdentifier>{ba298ca8-7a4b-45ad-ba45-d98c77fdc81c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\cJSON\cJSON.c">
+      <Filter>CJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\cJSON\cJSON_Utils.c">
+      <Filter>CJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\i80286\src\i80286_mnem.c">
+      <Filter>i80286</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\i80286\src\i80286.c">
+      <Filter>i80286</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\i80286\src\i80286_alu.c">
+      <Filter>i80286</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\i80286\src\sign_extend.c">
+      <Filter>i80286</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\lib\cJSON\cJSON.h">
+      <Filter>CJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\cJSON\cJSON_Utils.h">
+      <Filter>CJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\i80286\src\i80286.h">
+      <Filter>i80286</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\i80286\src\i80286_alu.h">
+      <Filter>i80286</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\i80286\src\i80286_mnem.h">
+      <Filter>i80286</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\i80286\src\sign_extend.h">
+      <Filter>i80286</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
